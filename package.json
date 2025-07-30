@@ -2,6 +2,7 @@
   "name": "ts-tsender-ui",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jookebawx.github.io/ts-tsender-ui",
   "scripts": {
     "anvil": "anvil --load-state tsender-deployed.json",
     "dev": "next dev  --turbopack",
@@ -29,7 +30,9 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "gh-pages": "^6.3.0",
     "jsdom": "^26.1.0",
+    "pino-pretty": "^13.1.0",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vitest": "^3.2.4"

@@ -48,5 +48,3 @@ node_modules/
 /playwright/.cache/
 
 /.cache-synpress
-
-playwright.config.ts
