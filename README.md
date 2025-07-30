@@ -39,6 +39,13 @@ cp .env.example .env.local
 # edit .env.local and add your project id
 ```
 
+## Testing
+
+Playwright tests rely on a running development server and require
+`NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID` to be configured as described above.
+Use `pnpm exec playwright test` to run the browser tests. Unit tests can be
+run with `pnpm test:run`.
+
 
 ## Deploy on Vercel
 
