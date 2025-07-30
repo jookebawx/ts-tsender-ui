@@ -16,6 +16,8 @@ jobs:
         run: |
           corepack enable
           pnpm install --frozen-lockfile
+      - name: Set up environment variables
+        run: echo "NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=${{ secrets.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID }}" >> $GITHUB_ENV
       - uses: actions/setup-node@v4
         with:
           node-version: 20
