@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ReactNode } from "react";
-import SafeProviders from './SafeProvider';
+import {Providers} from "./providers";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
@@ -12,10 +12,10 @@ export default function RootLayout(props: {children:ReactNode}) {
   return (
     <html lang="en">
       <body>
-        <SafeProviders>
+        <Providers>
           <Header />
           {props.children}
-        </SafeProviders>
+        </Providers>
       </body>
     </html>
   );

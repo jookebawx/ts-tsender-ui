@@ -6,9 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/ts-tsender-ui", 
-  assetPrefix: "./",         
-  trailingSlash: true
+  basePath: "",
+  assetPrefix: "./",
+  trailingSlash: true,
 };
 
 export default nextConfig;

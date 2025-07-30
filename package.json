@@ -4,13 +4,14 @@
   "private": true,
   "homepage": "https://jookebawx.github.io/ts-tsender-ui",
   "scripts": {
-    "anvil": "anvil --load-state tsender-deployed.json",
-    "dev": "next dev  --turbopack",
+    "dev": "next dev",
     "build": "next build",
+    "deploy": "pnpm build && gh-pages -d out",
+    "start": "next start",
     "test": "vitest",
     "test:run": "vitest run",
-    "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "anvil": "anvil --load-state tsender-deployed.json"
   },
   "dependencies": {
     "@rainbow-me/rainbowkit": "^2.2.8",
@@ -32,7 +33,6 @@
     "@types/react-dom": "^19",
     "gh-pages": "^6.3.0",
     "jsdom": "^26.1.0",
-    "pino-pretty": "^13.1.0",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vitest": "^3.2.4"
