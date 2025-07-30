@@ -34,3 +34,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Deploying to GitHub Pages
+
+When hosting the project on GitHub Pages the site is served from the repository subdirectory. `next.config.ts` is configured so that when `NODE_ENV` is `"production"` the `basePath` becomes `/ts-tsender-ui` and `assetPrefix` becomes `/ts-tsender-ui/`. These values are required for assets and links to resolve correctly on GitHub Pages.
